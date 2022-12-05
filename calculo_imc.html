@@ -15,14 +15,15 @@
         pulaLinha();
 }
 
-
 function calculaImc(altura, peso) {
 
-    var imc = peso / (altura * altura);
-    mostra("O imc calculado é " + imc);
+return peso / (altura * altura);
 }
 
-calculaImc(1.64, 55);
-calculaImc(1.72, 68);
+var imcFlavio = calculaImc(1.71, 73);
+var imcAmigo = calculaImc(1.72, 68);
+var totalImc = imcFlavio + imcAmigo;
+
+document.write("A soma dos imc's é " + totalImc);
 
 </script>
