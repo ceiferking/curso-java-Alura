@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 
 <script>
-
+        //função para espaçamento de linha
     function pulaLinha() {
 
         document.write("<br>");
@@ -17,12 +17,12 @@
 
 function calculaImc(altura, peso) {
 
-return peso / (altura * altura);
+return peso / (altura * altura); // retorna o imc da fução = resultado
 }
 
 var imcFlavio = calculaImc(1.71, 73);
 var imcAmigo = calculaImc(1.72, 68);
-var totalImc = imcFlavio + imcAmigo;
+var totalImc = imcFlavio + imcAmigo; // aplica a soma do imc do flavio e o amigo
 
 document.write("A soma dos imc's é " + totalImc);
 
