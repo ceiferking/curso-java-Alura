@@ -1,12 +1,11 @@
 <meta charset="UTF-8">
 
 <script>
-        //função para espaçamento de linha
+
     function pulaLinha() {
 
         document.write("<br>");
         document.write("<br>");
-
 }
 
     function mostra(frase) {
@@ -15,15 +14,20 @@
         pulaLinha();
 }
 
-function calculaImc(altura, peso) {
+    function calculaImc(altura, peso) {
 
-return peso / (altura * altura); // retorna o imc da fução = resultado
+        return peso / (altura * altura);
 }
 
-var imcFlavio = calculaImc(1.71, 73);
-var imcAmigo = calculaImc(1.72, 68);
-var totalImc = imcFlavio + imcAmigo; // aplica a soma do imc do flavio e o amigo
+var nome = prompt("digite seu nome")
+var alturaInformada = prompt("informe sua altura");
+var pesoInformado = prompt("informe seu peso")
 
-document.write("A soma dos imc's é " + totalImc);
+var Imc= calculaImc(alturaInformada, pesoInformado)
+
+document.write(nome + "O IMC calculado é: " + Imc)
+
+</script>
+
 
 </script>
