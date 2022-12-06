@@ -17,8 +17,17 @@
 var vitorias = prompt("Entre com o número de vitórias.");
 var empates = prompt("Entre com o numero de empates.");
 
-var pontos = vitorias * 3 + (empates * 1);
+var pontos = vitorias * 3 + (empates * 1); //calcula os pontos do time.
 
 mostra("Os pontos do seu time é: " + pontos);
 
+if(pontos > 28){
+    mostra("Seu time esta melhor do que o ano passado")
+}
+if(pontos < 28){    
+    mostra("Seu time esta pior que o ano passado")
+}
+if(pontos == 28){    
+    mostra("Seu time esta igual ao ano passado")
+}
 </script>
