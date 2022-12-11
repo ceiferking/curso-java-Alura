@@ -5,43 +5,31 @@
 
 <script>
 
-    var segredo1 = 5;
-        var segredo2 = 6;
-        var segredo3 = 7;
-
-    var segredo = Math.round(Math.random() * 10);
+    var segredos = [5,7,10,2,3];
 
     var input = document.querySelector("input");
         input.focus();
 
     function verifica() {
 
-                if(input.value == segredo1) {
+    var achou = false;
 
-        alert("Você ACERTOU!");
-        } else {
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
 
-        alert("Você ERROU!!!!!!!!");
+        if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU!");
+            achou = true;
+            break;
         }
+    }
 
-                if(input.value == segredo2) {
+    if(achou == false) {
+        alert("Você ERROU!");
+    }
 
-        alert("Você ACERTOU!");
-        } else {
-
-        alert("Você ERROU!!!!!!!!");
-        }
-
-                if(input.value == segredo3) {
-
-        alert("Você ACERTOU!");
-        } else {
-
-        alert("Você ERROU!!!!!!!!");
-        }
-
-                input.value = "";
-                input.focus();
+    input.value = "";
+    input.focus();
 
     }
 
