@@ -9,6 +9,7 @@
 
 .titulo-principal {
 	padding-left: 20px;
+	
 }
 
 .titulo-centralizado {
@@ -45,4 +46,15 @@ ul {
 
 .imagembeneficios {
 	width: 50%;
+}
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyrght{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
 }
